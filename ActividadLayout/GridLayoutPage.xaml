@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActividadLayout.GridLayoutPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="#fee" />
+            <Label Text="Row 0, Column 0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.Column="1"
+                     Color="#74DEC1" />
+            <Label Grid.Column="1"
+                   Text="Row 0, Column 1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.Row="1"
+                     Color="#DFD16D" />
+            <Label Grid.Row="1"
+                   Text="Row 1, Column 0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.Row="1"
+                     Grid.Column="1"
+                     Color="#74C4DE" />
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Stack Page" 
+                    Clicked="OnButtonClicked"></Button>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

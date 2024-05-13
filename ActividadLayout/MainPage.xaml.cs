@@ -20,4 +20,9 @@ public partial class MainPage : ContentPage
 
         SemanticScreenReader.Announce(CounterBtn.Text);
     }
+    
+    private void OnLayoutClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new GridLayoutPage());
+    }
 }
