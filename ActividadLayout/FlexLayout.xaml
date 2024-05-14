@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActividadLayout.FlexLayout">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column" JustifyContent="Start" AlignItems="Start">
+            <FlexLayout Direction="Row" Order="1" Grow="1">
+                <Image Source="avatar_image.jpeg"
+                       WidthRequest="200"
+                       HeightRequest="200"
+                       Margin="5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="The Avatar Aang"/>
+            </FlexLayout>
+
+            <FlexLayout Direction="Row" Order="2" Grow="1">
+                <Image Source="link_image.png"
+                       WidthRequest="200"
+                       HeightRequest="200"
+                       Margin="5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="The Choosen One Link"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"/>
+            </FlexLayout>
+            
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

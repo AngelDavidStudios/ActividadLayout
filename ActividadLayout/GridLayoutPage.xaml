@@ -35,8 +35,10 @@
                      Color="#74C4DE" />
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="Stack Page" 
-                    Clicked="OnButtonClicked"></Button>
+                    Text="Siguiente Layout -> " 
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"></Button>
         </Grid>
         
     </ContentPage.Content>

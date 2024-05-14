@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ActividadLayout;
 
-public partial class StackLayoutPage : ContentPage
+public partial class FlexLayout : ContentPage
 {
-    public StackLayoutPage()
+    public FlexLayout()
     {
         InitializeComponent();
     }
     
-    private void NextPage(object sender, EventArgs e)
+    async void OnImageTapped(object sender, EventArgs args)
     {
-        Navigation.PushAsync(new FlexLayout());
+        await Navigation.PushAsync(new AbsoluteKLayout());
     }
 }

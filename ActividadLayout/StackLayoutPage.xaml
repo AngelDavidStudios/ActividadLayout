@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ActividadLayout.StackLayoutPage">
@@ -8,12 +7,59 @@
             <Label VerticalOptions="Center"
                    HorizontalOptions="Center"
                    FontSize="Large"
-                     FontAttributes="Bold"> Pagina Stack</Label>
+                   FontAttributes="Bold"> Pagina Stack</Label>
+
+            <Frame BorderColor="Black"
+                   Padding="0"
+                   Margin="10">
+                <HorizontalStackLayout Margin="20"
+                                       Spacing="10">
+                    <Rectangle Fill="#ECD076"
+                               HeightRequest="30"
+                               WidthRequest="50" />
+                    <Label Text="Primer Elemento"
+                           FontSize="18" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black"
+                   Padding="0"
+                   Margin="10">
+                <HorizontalStackLayout Margin="20"
+                                       Spacing="10">
+                    <Rectangle Fill="#91CD4A"
+                               HeightRequest="30"
+                               WidthRequest="50" />
+                    <Label Text="Segundo Elemento"
+                           FontSize="22" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black"
+                   Padding="0"
+                   Margin="10">
+                <HorizontalStackLayout Margin="20"
+                                       Spacing="10">
+                    <Rectangle Fill="#4A99CD"
+                               HeightRequest="30"
+                               WidthRequest="50" />
+                    <Label Text="Tercer Elemento"
+                           FontSize="26" />
+                </HorizontalStackLayout>
+            </Frame>
             
-            <Border >
-                <Label> Borde 1</Label>
-            </Border>
+            <Frame BorderColor="Black"
+                   Padding="0"
+                   Margin="10">
+                <StackLayout Margin="20"
+                             Spacing="10">
+                    <Button Text="Siguiente Layout -> "
+                            Clicked="NextPage"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="EndAndExpand"></Button>
+                </StackLayout>
+            </Frame>
+
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>
